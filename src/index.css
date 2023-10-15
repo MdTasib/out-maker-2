@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Lexend", sans-serif;
+}
+
+
+
+.about-bg {
+  background: url("./assets/about-section-images/Top.png");
+  background: url("./assets/about-section-images/design-min.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.img-gradient {
+  background: linear-gradient(
+    180deg,
+    #fff 0%,
+    rgba(255, 255, 255, 0) 28.13%,
+    rgba(255, 255, 255, 0) 69.44%,
+    #fff 100%
+  );
+}
+
+.box-size {
+  @apply relative h-[300px] md:h-[400px];
+}
+
+.shipping-top {
+  background: url("../src/assets/shipping-page/image-1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.schedule-img-gradient {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.6) 0%,
+    rgba(255, 255, 255, 0.8) 28.79%,
+    #fff 100%
+  );
+}
+.parcel-img-gradient {
+  background: linear-gradient(
+    180deg,
+    #fff 0%,
+    rgba(255, 255, 255, 0.75) 48.52%,
+    rgba(255, 255, 255, 0.5) 100%
+  );
+}
+
+.font-shadow {
+  text-shadow: 0px 1px 15px rgba(0, 0, 0, 0.2);
+}
+
+.nav-shadow {
+  background: #fff;
+  box-shadow: 0px 7px 14px 0px rgb(255, 255, 255);
+}
+
+.card-hover{
+  @apply hover:bg-primary hover:text-white duration-500 transition-all
+}
+
+.nav-text-style{
+  @apply text-lg font-semibold uppercase mb-5
+}
+
+.divider:before {
+  background: #002B5B !important
+}
+.divider:after {
+  background: #002B5B !important
+}
+
+/* body {
+	margin: 0;
+	font-family: "Poppins", sans-serif;
+}
+
+code {
+	font-family: "Poppins", sans-serif;
+} */
+
+img {
+	width: 100%;
+}
+
+.zoomed {
+  transform: scale(1.1); /* You can adjust the scale factor as needed */
+  transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
+}
+
+@media only screen and (max-width: 680px) {
+	.iframe {
+		height: 300px !important;
+	}
+}
+
